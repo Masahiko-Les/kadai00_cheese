@@ -5,7 +5,7 @@
 - チーズアカデミーの紹介サイト
 
 ## ③アプリのデプロイURL
-デプロイしている場合はURLを記入（任意）
+masahiko-les.github.io/kadai00_cheese/
 
 ## ④アプリのログイン用IDまたはPassword（ある場合）
 - なし
