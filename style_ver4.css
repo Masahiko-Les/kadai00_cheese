@@ -1,0 +1,283 @@
+/*すべてに共通*/
+body{
+    color:#222222;
+    text-align: center;
+}
+h1{
+    font-size:48px;
+}
+h2{
+    font-size:32px;
+    font-weight:normal;
+}
+h3{
+    font-size: 24px;
+    padding-top:60px;
+    padding-bottom:30px;
+}
+h4{
+    font-size: 18px;
+    padding-bottom:60px;
+}
+h5{
+    font-size:24px;
+}
+a{
+    text-decoration: none;
+}
+p{
+    font-size: 16px;
+}
+ul{
+    list-style: none;
+}
+table{
+    margin:0 auto;
+}
+.btn{
+    display: inline-block;
+    width:300px;
+    font-size: 18px;
+    height:60px;
+    line-height: 60px;
+    background-color: #ffd61a;
+    color:black;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+    box-shadow: 0 7px goldenrod;
+}
+.btn:hover {
+    opacity: 1;
+}
+.btn:active {
+    position: relative;
+    top: 7px;
+    box-shadow: none;
+}
+
+/*全体*/
+.all_wrapper{
+    width:1200px;
+    margin: 0 auto;
+
+}
+
+/*ヘッダーエリア*/
+header{
+    height:100px;
+    width:100%;
+    display: flex;
+}
+.header_left{
+    width: 40%;
+}
+.header_left img{
+    width: 250px;
+    padding:20px 300px 20px 20px;
+}
+.header_right{ 
+    width:60%;
+    display: flex;
+    justify-content:flex-end;
+}
+.header_right a{
+    color:black;
+    font-size: 21px;
+    line-height:0px;/*なぜか高さ中央にできた*/
+
+    display: inline-block;
+    padding: 50px 25px;
+}
+
+/*TOP画像エリア*/
+.top_wrapper{
+    background-image: url(img/mainbg.png);
+    background-size: cover;
+    height:400px;
+    text-align: center;
+    color: white;
+}
+.container{
+    margin:0 auto;
+    padding: 100px 0;
+}
+.container h1{
+    margin-bottom:30px;
+}
+
+/*ABOUTエリア*/
+.about_wrapper{
+    width:100%;
+}
+.about_content{
+    padding-bottom:40px;
+}
+.about_content > h3{
+    color:#ffd61a;
+}
+
+.about_content > p{
+    margin-bottom:40px;
+    font-size:16px;
+}
+.about_img_area{
+    display: flex;
+}
+.about_img_area img{
+    width:25%;
+}
+
+/*COURSEエリア*/
+.course_wrapper{
+    width:100%;
+}
+#course_content{
+    width:100%;
+}
+
+#cousrse_area0 > p{
+    margin-bottom:60px;
+}
+
+#cousrse_area1,#cousrse_area2,#cousrse_area3{
+    display: flex;
+    background-color: #fafafa;
+}
+#course_img1{
+    width:50%;
+    background-image: url(img/course_01.jpg);
+    background-size: cover;
+}
+#course_img2{
+    width:50%;
+    background-image: url(img/course_02.jpg);
+    background-size: cover;
+}
+#course_img3{
+    width:50%;
+    background-image: url(img/course_03.jpg);
+    background-size: cover;
+}
+
+.course_text_area{
+    width: 50%;
+}
+#course_text1{
+    padding:120px 50px;
+    text-align: left;
+}
+#course_text2{
+    padding:120px 50px;
+    text-align: right;
+}
+#course_text3{
+    padding:120px 50px;
+    text-align: left;
+}
+
+
+
+/*NEWSエリア*/
+.news_wrapper{
+    width:100%;
+}
+.news_box_container{
+    display: flex;
+    justify-content:center;
+}
+.news_content > h3{
+    color:#ffd61a;
+}
+.news_box{
+    width:300px;
+    margin:0 15px;
+}
+.news_box p{
+    text-align: left;
+    color:black;
+}
+.news_box img{
+    width:300px;
+}
+.news_more_btn{
+    margin:60px;
+}
+.newsbox_hover :hover{
+    opacity: 0.5;
+}
+.newsbox_hover p:hover{/*aのhoverの上にpのhoverも反映されてしまっている*/
+    color:black;
+}
+
+
+/*ACCESSエリア*/
+.access_wrapper{
+    width:100%;
+}
+.access_content{/*文字の整列が必要*/
+    background-color: #fafafa;
+    padding-bottom:60px;
+}
+.access_content > table{
+    margin-top:60px;
+    text-align: left;
+}
+.access_content th{/*テーブルの高さ・行間・セル間の調整が難しい*/
+    height: 50px;
+    padding-right:50px;
+    font-weight:normal;
+} 
+.iframe{
+    width:100%;
+}
+
+
+/*CONTACTエリア*//* tableじゃなくてFLEXBOXの方がいい？*/
+.contact_content > p{
+    margin-bottom: 30px;
+}
+contact_content > input{
+    width:900px;
+}
+.contact_content > table{
+    margin-top: 40px;
+    border-top: thick double #bfbfbf;
+}
+.contact_table th{
+
+    height:36px;/* 高さ調整できてる？*/
+    text-align: left;
+    padding:8px 64px 8px 16px;
+    border-bottom: solid #bfbfbf;
+    font-weight:normal;
+}
+.contact_table td{
+    width:400px;
+    padding:8px;
+    text-align: left;
+    border-bottom: solid #bfbfbf;
+    border-left: solid #bfbfbf;
+
+}
+.contact_btn{
+    margin-top:30px;
+    margin-bottom:140px;
+}
+.checkbox_reason_for_apply {
+    line-height: 40px;/* 無理やり感は否めない*/
+}
+
+
+/*FOOTERエリア*/
+footer{
+    width:100%;
+}
+
+.footer_area{
+    background-color: #707070;
+    color:white;
+}
+.footer_area > p{
+    padding:30px 0;
+}
